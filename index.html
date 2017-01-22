@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Chill Wave</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/meter.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+        <link rel="stylesheet" href="css/app.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Orbitron" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide flex flexcontainer">
+                    <div id="first" class="full"></div>
+                </div>
+                <div class="swiper-slide flex flexcontainer">
+                    <div id="second" class="full"></div>
+                </div>
+                <div class="swiper-slide flex flexcontainer">
+                    <div id="fourth" class="full"></div>
+                </div>
+                <div class="swiper-slide flex flexcontainer">
+                    <div id="third" class="full">
+                        <div id="information">
+                            <span class="nunito" style="font-size: 2em;">Threapist Name</span>
+                            <input id="userName" type="text" />
+                            <button id="playIt" >Play</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="gameContainer" class="swiper-slide flex flexcol">
+                    <header class="head flex">
+                        <div class="wrapper flex">
+                            <div class="name nunito">
+                                <span>User:</span>
+                                <span class="right" id="user"></span>
+                            </div>
+                            <div class="score">
+                                <span>Score:</span>
+                                <span class="right" id="points">0</span>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="content">
+                        <div class="wrapper-content flex">
+                            <div id="frec" class="flex nunito">
+                                <span>FRECUENCY</span>
+                                <canvas id="ecg" style="border: 1px solid rgb(204, 204, 204); border-radius: 5px;"></canvas>
+                            </div>
+                            <div id="device" class="flex nunito">
+                                <span>DEVICE</span>
+                                <canvas id="meter"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="foot flex">
+                        <a id="credits" class="btn round nunito">Credits</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/crate.js"></script>
+
+        <script src="js/needle.js"></script>
+        <script src="js/meter.js"></script>
+        <script src="js/ECG.js"></script>
+        <script src="js/plethGraph.js"></script>
+
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
